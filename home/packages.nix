@@ -6,7 +6,6 @@
   home.packages = with pkgs; [
     delta
     fd
-    neovim
     nushell
     ripgrep
     yazi
@@ -14,4 +13,9 @@
   ];
 
   programs.home-manager.enable = true;
+  programs.neovim = {
+    enable = true;
+    vimAlias = true;
+    vimdiffAlias = true;
+  };
 }
