@@ -11,11 +11,9 @@
     gdb
     lldb
     nodejs
-    nushell
     ripgrep
     tokei
     tree-sitter
-    yazi
     zellij
   ];
 
@@ -33,6 +31,14 @@
     enable = true;
     vimAlias = true;
     vimdiffAlias = true;
+  };
+  programs.nushell = {
+    enable = true;
+  };
+  programs.yazi = {
+    enable = true;
+    enableBashIntegration = true;
+    enableNushellIntegration = true;
   };
 
   home.file.".config/nvim" = {
