@@ -27,14 +27,7 @@
       cambricon = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         modules = [
-          ./home/packages.nix
-          {
-            home = {
-              username = "root";
-              homeDirectory = "/root";
-              stateVersion = "25.11";
-            };
-          }
+          ./home/cambricon.nix
         ];
       };
     };
