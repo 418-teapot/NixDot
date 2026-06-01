@@ -9,11 +9,13 @@
     delta
     fd
     gdb
+    lld
     lldb
     nodejs
     ripgrep
     tokei
     tree-sitter
+    uv
     zellij
   ];
 
