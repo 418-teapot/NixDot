@@ -15,5 +15,6 @@
     ./packages/neovim.nix
     ./packages/nushell.nix
     ./packages/yazi.nix
+    ./packages/gc.nix
   ];
 }

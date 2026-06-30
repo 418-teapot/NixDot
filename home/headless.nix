@@ -18,5 +18,6 @@
     ./packages/rust.nix
     ./packages/llvm.nix
     ./packages/js.nix
+    ./packages/gc.nix
   ];
 }
