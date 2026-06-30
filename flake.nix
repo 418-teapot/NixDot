@@ -30,6 +30,13 @@
           ./home/cambricon.nix
         ];
       };
+
+      headless = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+        modules = [
+          ./home/headless.nix
+        ];
+      };
     };
   };
 }
