@@ -25,7 +25,7 @@
     pkgs = import nixpkgs {
       inherit system;
       config.allowUnfree = true;
-      overlays = [ nixgl.overlay ];
+      overlays = [nixgl.overlay];
     };
   in {
     formatter.${system} = pkgs.alejandra;
