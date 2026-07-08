@@ -17,7 +17,7 @@ echo 'export HOME=/root' >> ~/.bashrc
 ## 命令
 
 ```sh
-nix fmt                        # 格式化所有 Nix 文件（使用 alejandra）
+nix fmt .                        # 格式化所有 Nix 文件（使用 alejandra）
 nix run home-manager -- switch --flake .#cambricon   # 应用配置
 ```
 

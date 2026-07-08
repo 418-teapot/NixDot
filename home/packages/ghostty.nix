@@ -3,9 +3,8 @@
   pkgs,
   ...
 }: {
-  home.packages = [
-    (pkgs.writeShellScriptBin "ghostty" ''
-      exec ${pkgs.lib.getExe pkgs.nixgl.nixGLMesa} ${pkgs.lib.getExe pkgs.ghostty} "$@"
-    '')
-  ];
+  home.file.".config/ghostty/config".text = ''
+    font-size = 18
+    font-family = FiraCode Nerd Font Mono
+  '';
 }

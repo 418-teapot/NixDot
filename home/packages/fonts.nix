@@ -5,6 +5,7 @@
 }: {
   home.packages = with pkgs; [
     nerd-fonts.fira-code
-    fcitx5
+    source-han-sans
+    source-han-serif
   ];
 }
