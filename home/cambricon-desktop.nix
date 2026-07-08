@@ -23,5 +23,6 @@
     ./packages/fonts.nix
     ./packages/fcitx5.nix
     ./packages/ghostty.nix
+    ./packages/rust.nix
   ];
 }
