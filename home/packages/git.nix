@@ -1,5 +1,6 @@
 {
   config,
+  lib,
   pkgs,
   ...
 }: {
@@ -7,8 +8,8 @@
     enable = true;
     settings = {
       user = {
-        name = "wangshuo2";
-        email = "wangshuo2@cambricon.com";
+        name = lib.mkDefault "wangshuo2";
+        email = lib.mkDefault "wangshuo2@cambricon.com";
       };
     };
   };

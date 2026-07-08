@@ -2,10 +2,10 @@
   description = "NixDot";
 
   inputs = {
-    nixpkgs.url = "nixpkgs/nixos-25.11";
+    nixpkgs.url = "nixpkgs/nixos-26.05";
 
     home-manager = {
-      url = "github:nix-community/home-manager/release-25.11";
+      url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -24,24 +24,24 @@
     formatter.${system} = pkgs.alejandra;
 
     homeConfigurations = {
-      cambricon = home-manager.lib.homeManagerConfiguration {
+      cambricon-pod = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         modules = [
-          ./home/cambricon.nix
+          ./home/cambricon-pod.nix
         ];
       };
 
-      headless = home-manager.lib.homeManagerConfiguration {
+      cambricon-dev = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         modules = [
-          ./home/headless.nix
+          ./home/cambricon-dev.nix
         ];
       };
 
-      linux = home-manager.lib.homeManagerConfiguration {
+      cambricon-desktop = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         modules = [
-          ./home/linux.nix
+          ./home/cambricon-desktop.nix
         ];
       };
     };
