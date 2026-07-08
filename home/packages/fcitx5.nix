@@ -16,6 +16,7 @@
         kdePackages.fcitx5-chinese-addons
         kdePackages.fcitx5-configtool
         fcitx5-material-color
+        fcitx5-pinyin-zhwiki
       ];
 
       settings = {
