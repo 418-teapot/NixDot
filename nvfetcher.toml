@@ -1,0 +1,8 @@
+[obsidian]
+src.github = "obsidianmd/obsidian-releases"
+src.prefix = "v"
+fetch.url = "https://github.com/obsidianmd/obsidian-releases/releases/download/v$ver/Obsidian-$ver.AppImage"
+
+[sidra]
+src.github = "wimpysworld/sidra"
+fetch.url = "https://github.com/wimpysworld/sidra/releases/download/$ver/Sidra-linux-x86_64.AppImage"

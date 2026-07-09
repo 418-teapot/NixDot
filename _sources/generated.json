@@ -1,0 +1,32 @@
+{
+    "obsidian": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "obsidian",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-9ti5b+aFqGMsgZzAk6JIrOD2urQQ9EpskpomEbHrsXw=",
+            "type": "url",
+            "url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.12.7/Obsidian-1.12.7.AppImage"
+        },
+        "version": "1.12.7"
+    },
+    "sidra": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "sidra",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-xURAwCDHMyJtt0ri2X3PKhBVE9Rqch/Oa6dhZMVtGDA=",
+            "type": "url",
+            "url": "https://github.com/wimpysworld/sidra/releases/download/0.3.5/Sidra-linux-x86_64.AppImage"
+        },
+        "version": "0.3.5"
+    }
+}
