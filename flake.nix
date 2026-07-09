@@ -21,7 +21,9 @@
       config.allowUnfree = true;
     };
   in {
-    formatter.${system} = pkgs.alejandra;
+    formatter.${system} = pkgs.writeShellScriptBin "formatter" ''
+      exec ${pkgs.alejandra}/bin/alejandra --exclude _sources "$@"
+    '';
 
     homeConfigurations = {
       cambricon-pod = home-manager.lib.homeManagerConfiguration {

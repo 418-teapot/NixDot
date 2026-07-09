@@ -4,7 +4,8 @@
   fetchurl,
   fetchFromGitHub,
   dockerTools,
-}: {
+}:
+{
   obsidian = {
     pname = "obsidian";
     version = "1.12.7";
