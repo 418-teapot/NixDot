@@ -19,6 +19,7 @@
   imports = [
     ./packages/basic.nix
     ./packages/git.nix
+    ./packages/llvm.nix
     ./packages/neovim.nix
     ./packages/nvfetcher.nix
     ./packages/nushell.nix
