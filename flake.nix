@@ -22,7 +22,7 @@
     };
   in {
     formatter.${system} = pkgs.writeShellScriptBin "formatter" ''
-      exec ${pkgs.alejandra}/bin/alejandra --exclude _sources "$@"
+      exec ${pkgs.alejandra}/bin/alejandra --exclude ./_sources "$@"
     '';
 
     homeConfigurations = {
