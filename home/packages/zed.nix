@@ -13,8 +13,10 @@
     mutableUserDebug = true;
     userSettings = {
       vim_mode = true;
-      ui_font_size = 16;
-      buffer_font_size = 18;
+      agent_buffer_font_size = 20;
+      agent_ui_font_size = 20;
+      ui_font_size = 18;
+      buffer_font_size = 20;
       buffer_font_family = "Maple Mono NF CN";
       theme = {
         mode = "system";
