@@ -30,7 +30,7 @@
     desktopName = "Obsidian";
     comment = "Knowledge base that works on top of a local folder of plain text Markdown files";
     icon = "obsidian";
-    exec = "obsidian %u";
+    exec = "${obsidian}/bin/obsidian %u";
     categories = ["Office"];
     mimeTypes = ["x-scheme-handler/obsidian"];
   };
