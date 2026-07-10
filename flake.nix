@@ -4,6 +4,8 @@
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-26.05";
 
+    nixpkgs-unstable.url = "nixpkgs/nixpkgs-unstable";
+
     home-manager = {
       url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -13,10 +15,15 @@
   outputs = inputs @ {
     self,
     nixpkgs,
+    nixpkgs-unstable,
     home-manager,
   }: let
     system = "x86_64-linux";
     pkgs = import nixpkgs {
+      inherit system;
+      config.allowUnfree = true;
+    };
+    pkgsUnstable = import nixpkgs-unstable {
       inherit system;
       config.allowUnfree = true;
     };
@@ -45,6 +52,9 @@
         modules = [
           ./home/cambricon-desktop.nix
         ];
+        extraSpecialArgs = {
+          inherit pkgsUnstable;
+        };
       };
     };
   };

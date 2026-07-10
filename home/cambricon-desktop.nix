@@ -31,6 +31,7 @@
     ./packages/obsidian.nix
     ./packages/rust.nix
     ./packages/sidra.nix
+    ./packages/zed.nix
     ./packages/zotero.nix
   ];
 }
