@@ -4,9 +4,11 @@
   ...
 }: {
   home.packages = with pkgs; [
-    rustc
     cargo
     cargo-llvm-cov
+    clippy
+    rustc
+    rustfmt
   ];
 
   programs.cargo = {

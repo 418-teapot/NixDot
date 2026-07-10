@@ -4,6 +4,8 @@
   ...
 }: {
   home.packages = with pkgs; [
+    biome
     bun
+    typescript
   ];
 }
