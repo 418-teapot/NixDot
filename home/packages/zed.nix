@@ -28,6 +28,11 @@
       wrap_guides = [80];
       relative_line_numbers = "enabled";
       soft_wrap = "editor_width";
+      languages = {
+        Nix = {
+          language_servers = ["nixd" "!nil"];
+        };
+      };
       agent_servers = {
         opencode = {type = "registry";};
         "pi-acp" = {type = "registry";};

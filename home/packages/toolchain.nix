@@ -4,11 +4,24 @@
   ...
 }: {
   home.packages = with pkgs; [
+    # LLVM / C/C++
+    gcc
+    libllvm
+    lld
+    lldb
+    mold
+    # Rust
     cargo
     cargo-llvm-cov
     clippy
     rustc
     rustfmt
+    # JavaScript / TypeScript
+    biome
+    bun
+    typescript
+    # Nix
+    nixd
   ];
 
   programs.cargo = {
