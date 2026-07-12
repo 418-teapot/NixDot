@@ -7,8 +7,8 @@
     bat
     bottom
     delta
+    dust
     fd
-    gdb
     lazygit
     nodejs
     ripgrep

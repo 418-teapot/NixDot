@@ -8,7 +8,6 @@
     gcc
     libllvm
     lld
-    lldb
     mold
     # Rust
     cargo

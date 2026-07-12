@@ -4,22 +4,22 @@
   ...
 }: {
   home = {
-    username = "root";
-    homeDirectory = "/root";
+    username = "teapot";
+    homeDirectory = "/Users/teapot";
     stateVersion = "26.05";
   };
 
   programs.git.settings.user = {
-    name = "wangshuo2";
-    email = "wangshuo2@cambricon.com";
+    name = "418teapot";
+    email = "wangshuo2912@foxmail.com";
   };
 
   imports = [
     ./packages/basic.nix
-    ./packages/debugger.nix
     ./packages/git.nix
+    ./packages/ssh.nix
     ./packages/neovim.nix
     ./packages/nushell.nix
-    ./packages/yazi.nix
+    ./packages/zed.nix
   ];
 }

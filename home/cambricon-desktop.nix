@@ -24,6 +24,7 @@
 
   imports = [
     ./packages/basic.nix
+    ./packages/debugger.nix
     ./packages/git.nix
     ./packages/neovim.nix
     ./packages/nushell.nix

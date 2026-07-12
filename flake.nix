@@ -23,14 +23,36 @@
       inherit system;
       config.allowUnfree = true;
     };
-    pkgsUnstable = import nixpkgs-unstable {
+    linuxPkgsUnstable = import nixpkgs-unstable {
       inherit system;
+      config.allowUnfree = true;
+    };
+
+    darwinSystem = "aarch64-darwin";
+    darwinPkgs = import nixpkgs {
+      system = darwinSystem;
       config.allowUnfree = true;
     };
   in {
     formatter.${system} = pkgs.writeShellScriptBin "formatter" ''
       exec ${pkgs.alejandra}/bin/alejandra --exclude ./_sources "$@"
     '';
+
+    apps = let
+      mkHomeManagerApp = system: {
+        type = "app";
+        program = "${home-manager.packages.${system}.home-manager}/bin/home-manager";
+      };
+    in {
+      ${system} = {
+        home-manager = mkHomeManagerApp system;
+        default = mkHomeManagerApp system;
+      };
+      ${darwinSystem} = {
+        home-manager = mkHomeManagerApp darwinSystem;
+        default = mkHomeManagerApp darwinSystem;
+      };
+    };
 
     homeConfigurations = {
       cambricon-pod = home-manager.lib.homeManagerConfiguration {
@@ -53,8 +75,15 @@
           ./home/cambricon-desktop.nix
         ];
         extraSpecialArgs = {
-          inherit pkgsUnstable;
+          pkgsUnstable = linuxPkgsUnstable;
         };
+      };
+
+      mac-mini = home-manager.lib.homeManagerConfiguration {
+        pkgs = darwinPkgs;
+        modules = [
+          ./home/mac-mini.nix
+        ];
       };
     };
   };
