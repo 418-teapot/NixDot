@@ -30,6 +30,7 @@
     ./packages/nushell.nix
     ./packages/yazi.nix
     ./packages/zoxide.nix
+    ./packages/direnv.nix
     ./packages/fonts.nix
     ./packages/fcitx5.nix
     ./packages/ghostty.nix
