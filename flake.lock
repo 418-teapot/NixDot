@@ -21,6 +21,22 @@
         "type": "github"
       }
     },
+    "neodot": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1770273481,
+        "narHash": "sha256-uJBqkcEdg8Cx3FGIpwsnV1/+SK2w60r+vpqPlGMY1/4=",
+        "owner": "418-teapot",
+        "repo": "NeoDot",
+        "rev": "0e66c0eae734e6d764e81821090151517dc4eef9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "418-teapot",
+        "repo": "NeoDot",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1783703440,
@@ -52,6 +68,7 @@
     "root": {
       "inputs": {
         "home-manager": "home-manager",
+        "neodot": "neodot",
         "nixpkgs": "nixpkgs",
         "nixpkgs-unstable": "nixpkgs-unstable"
       }

@@ -21,6 +21,13 @@ nix fmt .                        # 格式化所有 Nix 文件（使用 alejandra
 nix run home-manager -- switch --flake .#cambricon-pod      # 应用配置（root，最小集）
 nix run home-manager -- switch --flake .#cambricon-dev      # 应用配置（root，开发工具链）
 nix run home-manager -- switch --flake .#cambricon-desktop  # 应用配置（cambricon，桌面）
+
+# —— NeoDot 本地开发（不 push 也能改 nvim 配置）——
+git clone https://github.com/418-teapot/NeoDot ~/Code/NeoDot   # 一次性
+# 开发期：把 flake.nix 里 neodot.url 改成 path:/home/cambricon/Code/NeoDot
+nix run home-manager -- switch --flake .#cambricon-dev          # 未提交改动也会被读取
+# 稳定后：push NeoDot → 把 url 改回 "github:418-teapot/NeoDot" → 更新锁定：
+nix flake update neodot
 ```
 
 ## 架构
@@ -41,7 +48,7 @@ home/packages/              — 各工具模块，按需由上述配置导入
 ## 模块约定
 
 - 新增的软件包应以独立的 `.nix` 文件放在 `home/packages/` 目录下，并在需要的 `home/cambricon-*.nix` 中导入。
-- Neovim 配置从外部仓库拉取（`418-teapot/NeoDot`，commit 固定于 `neovim.nix` 中）。同步上游变更时需更新 rev hash。
+- Neovim 配置来自外部仓库 `418-teapot/NeoDot`，作为 flake input（`neodot`，`flake = false`）拉取，rev 由 `flake.lock` 固定。本地修改 NeoDot 的工作流见「命令」段；同步上游时用 `nix flake update neodot` 更新锁定。
 
 ## 提交风格
 

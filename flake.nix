@@ -10,6 +10,11 @@
       url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    neodot = {
+      url = "github:418-teapot/NeoDot";
+      flake = false;
+    };
   };
 
   outputs = inputs @ {
@@ -17,6 +22,7 @@
     nixpkgs,
     nixpkgs-unstable,
     home-manager,
+    neodot,
   }: let
     system = "x86_64-linux";
     pkgs = import nixpkgs {
@@ -60,6 +66,9 @@
         modules = [
           ./home/cambricon-pod.nix
         ];
+        extraSpecialArgs = {
+          inherit inputs;
+        };
       };
 
       cambricon-dev = home-manager.lib.homeManagerConfiguration {
@@ -67,6 +76,9 @@
         modules = [
           ./home/cambricon-dev.nix
         ];
+        extraSpecialArgs = {
+          inherit inputs;
+        };
       };
 
       cambricon-desktop = home-manager.lib.homeManagerConfiguration {
@@ -75,6 +87,7 @@
           ./home/cambricon-desktop.nix
         ];
         extraSpecialArgs = {
+          inherit inputs;
           pkgsUnstable = linuxPkgsUnstable;
         };
       };
@@ -84,6 +97,9 @@
         modules = [
           ./home/mac-mini.nix
         ];
+        extraSpecialArgs = {
+          inherit inputs;
+        };
       };
     };
   };
