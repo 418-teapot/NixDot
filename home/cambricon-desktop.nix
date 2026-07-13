@@ -29,6 +29,7 @@
     ./packages/neovim.nix
     ./packages/nushell.nix
     ./packages/yazi.nix
+    ./packages/zoxide.nix
     ./packages/fonts.nix
     ./packages/fcitx5.nix
     ./packages/ghostty.nix

@@ -20,6 +20,7 @@
     ./packages/ssh.nix
     ./packages/neovim.nix
     ./packages/nushell.nix
+    ./packages/zoxide.nix
     ./packages/zed.nix
   ];
 }

@@ -21,5 +21,6 @@
     ./packages/neovim.nix
     ./packages/nushell.nix
     ./packages/yazi.nix
+    ./packages/zoxide.nix
   ];
 }
