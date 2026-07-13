@@ -7,6 +7,7 @@
     # LLVM / C/C++
     gcc
     libllvm
+    llvm
     lld
     mold
     # Rust
@@ -21,6 +22,12 @@
     typescript
     # Nix
     nixd
+    # Scheme
+    chez
+    # Odin
+    odin
+    # C3
+    c3c
   ];
 
   programs.cargo = {
