@@ -16,12 +16,9 @@
 
   imports = [
     ./packages/basic.nix
-    ./packages/git.nix
     ./packages/ssh.nix
     ./packages/neovim.nix
     ./packages/nushell.nix
-    ./packages/zoxide.nix
-    ./packages/direnv.nix
     ./packages/zed.nix
   ];
 }

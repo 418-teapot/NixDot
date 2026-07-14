@@ -25,15 +25,11 @@
   imports = [
     ./packages/basic.nix
     ./packages/debugger.nix
-    ./packages/git.nix
+    ./packages/fcitx5.nix
+    ./packages/fonts.nix
+    ./packages/ghostty.nix
     ./packages/neovim.nix
     ./packages/nushell.nix
-    ./packages/yazi.nix
-    ./packages/zoxide.nix
-    ./packages/direnv.nix
-    ./packages/fonts.nix
-    ./packages/fcitx5.nix
-    ./packages/ghostty.nix
     ./packages/obsidian.nix
     ./packages/sidra.nix
     ./packages/ssh.nix
