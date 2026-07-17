@@ -23,6 +23,7 @@
   ];
 
   imports = [
+    ./packages/agent.nix
     ./packages/basic.nix
     ./packages/debugger.nix
     ./packages/fcitx5.nix
