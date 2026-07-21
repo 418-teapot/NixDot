@@ -19,6 +19,7 @@
   home.packages = with pkgs; [
     flameshot
     nvfetcher
+    remmina
     zotero
   ];
 
