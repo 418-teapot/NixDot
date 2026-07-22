@@ -10,6 +10,7 @@
     delta
     dust
     fd
+    gnumake
     lazygit
     nodejs
     ripgrep

@@ -35,6 +35,7 @@
     ./packages/obsidian.nix
     ./packages/sidra.nix
     ./packages/ssh.nix
+    ./packages/texlive.nix
     ./packages/toolchain.nix
     ./packages/zed.nix
   ];
