@@ -31,7 +31,7 @@
     ./packages/fonts.nix
     ./packages/ghostty.nix
     ./packages/neovim.nix
-    ./packages/nushell.nix
+    ./packages/nushell/nushell.nix
     ./packages/obsidian.nix
     ./packages/sidra.nix
     ./packages/ssh.nix

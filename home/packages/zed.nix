@@ -55,7 +55,7 @@ in {
         "pi-acp" = {type = "registry";};
       };
     };
-    extensions = ["nix" "toml" "git-firefly" "material-icon-theme"];
+    extensions = ["nix" "nu" "toml" "git-firefly" "material-icon-theme"];
   };
 
   home.packages = pkgs.lib.optionals (!isDarwin) [

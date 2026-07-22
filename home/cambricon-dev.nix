@@ -18,7 +18,7 @@
     ./packages/basic.nix
     ./packages/debugger.nix
     ./packages/neovim.nix
-    ./packages/nushell.nix
+    ./packages/nushell/nushell.nix
     ./packages/toolchain.nix
   ];
 }
