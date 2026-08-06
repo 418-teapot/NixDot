@@ -15,6 +15,11 @@
       url = "github:418-teapot/NeoDot";
       flake = false;
     };
+
+    paseo = {
+      url = "github:getpaseo/paseo";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = inputs @ {
@@ -23,6 +28,7 @@
     nixpkgs-unstable,
     home-manager,
     neodot,
+    ...
   }: let
     system = "x86_64-linux";
     pkgs = import nixpkgs {

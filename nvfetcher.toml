@@ -3,6 +3,11 @@ src.github = "obsidianmd/obsidian-releases"
 src.prefix = "v"
 fetch.url = "https://github.com/obsidianmd/obsidian-releases/releases/download/v$ver/Obsidian-$ver.AppImage"
 
+[paseo]
+src.github = "getpaseo/paseo"
+src.prefix = "v"
+fetch.url = "https://github.com/getpaseo/paseo/releases/download/v$ver/Paseo-x86_64.AppImage"
+
 [sidra]
 src.github = "wimpysworld/sidra"
 fetch.url = "https://github.com/wimpysworld/sidra/releases/download/$ver/Sidra-linux-x86_64.AppImage"

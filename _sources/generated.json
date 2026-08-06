@@ -8,11 +8,26 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-9ti5b+aFqGMsgZzAk6JIrOD2urQQ9EpskpomEbHrsXw=",
+            "sha256": "sha256-tm8B0qavu2t6vZPktcZgJkXwPBatLW3Un9WpDd3YeHI=",
             "type": "url",
-            "url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.12.7/Obsidian-1.12.7.AppImage"
+            "url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.13.4/Obsidian-1.13.4.AppImage"
         },
-        "version": "1.12.7"
+        "version": "1.13.4"
+    },
+    "paseo": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "paseo",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-zWrEHZc7BuQYL0Jx7HaajftRBm2BbNHnLHQpPWsOE6s=",
+            "type": "url",
+            "url": "https://github.com/getpaseo/paseo/releases/download/v0.2.5/Paseo-x86_64.AppImage"
+        },
+        "version": "0.2.5"
     },
     "sidra": {
         "cargoLock": null,
@@ -23,10 +38,10 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-xURAwCDHMyJtt0ri2X3PKhBVE9Rqch/Oa6dhZMVtGDA=",
+            "sha256": "sha256-itG0Dm/ID79SXs28QHoHkZO3J2sCzXBNyBX1gwb9Z2Y=",
             "type": "url",
-            "url": "https://github.com/wimpysworld/sidra/releases/download/0.3.5/Sidra-linux-x86_64.AppImage"
+            "url": "https://github.com/wimpysworld/sidra/releases/download/0.4.0/Sidra-linux-x86_64.AppImage"
         },
-        "version": "0.3.5"
+        "version": "0.4.0"
     }
 }

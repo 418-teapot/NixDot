@@ -8,18 +8,26 @@
 {
   obsidian = {
     pname = "obsidian";
-    version = "1.12.7";
+    version = "1.13.4";
     src = fetchurl {
-      url = "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.12.7/Obsidian-1.12.7.AppImage";
-      sha256 = "sha256-9ti5b+aFqGMsgZzAk6JIrOD2urQQ9EpskpomEbHrsXw=";
+      url = "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.13.4/Obsidian-1.13.4.AppImage";
+      sha256 = "sha256-tm8B0qavu2t6vZPktcZgJkXwPBatLW3Un9WpDd3YeHI=";
+    };
+  };
+  paseo = {
+    pname = "paseo";
+    version = "0.2.5";
+    src = fetchurl {
+      url = "https://github.com/getpaseo/paseo/releases/download/v0.2.5/Paseo-x86_64.AppImage";
+      sha256 = "sha256-zWrEHZc7BuQYL0Jx7HaajftRBm2BbNHnLHQpPWsOE6s=";
     };
   };
   sidra = {
     pname = "sidra";
-    version = "0.3.5";
+    version = "0.4.0";
     src = fetchurl {
-      url = "https://github.com/wimpysworld/sidra/releases/download/0.3.5/Sidra-linux-x86_64.AppImage";
-      sha256 = "sha256-xURAwCDHMyJtt0ri2X3PKhBVE9Rqch/Oa6dhZMVtGDA=";
+      url = "https://github.com/wimpysworld/sidra/releases/download/0.4.0/Sidra-linux-x86_64.AppImage";
+      sha256 = "sha256-itG0Dm/ID79SXs28QHoHkZO3J2sCzXBNyBX1gwb9Z2Y=";
     };
   };
 }

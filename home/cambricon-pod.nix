@@ -19,5 +19,6 @@
     ./packages/debugger.nix
     ./packages/neovim.nix
     ./packages/nushell/nushell.nix
+    ./packages/paseo/cli.nix
   ];
 }

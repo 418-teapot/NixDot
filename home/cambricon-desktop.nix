@@ -33,6 +33,7 @@
     ./packages/neovim.nix
     ./packages/nushell/nushell.nix
     ./packages/obsidian.nix
+    ./packages/paseo/desktop.nix
     ./packages/sidra.nix
     ./packages/ssh.nix
     ./packages/texlive.nix

@@ -65,12 +65,33 @@
         "type": "indirect"
       }
     },
+    "paseo": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1785971371,
+        "narHash": "sha256-GmQ2mFJ23RkiUzSA6BIl1yo3kqVmX2VSnhiJ8jCLxGg=",
+        "owner": "getpaseo",
+        "repo": "paseo",
+        "rev": "5465d66edd64dba0593aebb6cc1b42956c198120",
+        "type": "github"
+      },
+      "original": {
+        "owner": "getpaseo",
+        "repo": "paseo",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "home-manager": "home-manager",
         "neodot": "neodot",
         "nixpkgs": "nixpkgs",
-        "nixpkgs-unstable": "nixpkgs-unstable"
+        "nixpkgs-unstable": "nixpkgs-unstable",
+        "paseo": "paseo"
       }
     }
   },
