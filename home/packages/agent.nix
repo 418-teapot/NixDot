@@ -1,5 +1,7 @@
 {pkgsUnstable, ...}: {
-  home.packages = [
-    pkgsUnstable.pi-coding-agent
+  home.packages = with pkgsUnstable; [
+    codex
+    opencode
+    pi-coding-agent
   ];
 }

@@ -74,6 +74,7 @@
         ];
         extraSpecialArgs = {
           inherit inputs;
+          pkgsUnstable = linuxPkgsUnstable;
         };
       };
 
