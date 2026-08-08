@@ -45,9 +45,17 @@
       system = darwinSystem;
       config.allowUnfree = true;
     };
+    darwinPkgsUnstable = import nixpkgs-unstable {
+      system = darwinSystem;
+      config.allowUnfree = true;
+    };
   in {
     formatter.${system} = pkgs.writeShellScriptBin "formatter" ''
       exec ${pkgs.alejandra}/bin/alejandra --exclude ./_sources "$@"
+    '';
+
+    formatter.${darwinSystem} = darwinPkgs.writeShellScriptBin "formatter" ''
+      exec ${darwinPkgs.alejandra}/bin/alejandra --exclude ./_sources "$@"
     '';
 
     apps = let
@@ -106,6 +114,7 @@
         ];
         extraSpecialArgs = {
           inherit inputs;
+          pkgsUnstable = darwinPkgsUnstable;
         };
       };
     };
