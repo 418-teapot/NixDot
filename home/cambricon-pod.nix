@@ -16,6 +16,5 @@
 
   imports = [
     ./common.nix
-    ./packages/paseo/cli.nix
   ];
 }
