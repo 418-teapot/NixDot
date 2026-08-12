@@ -19,13 +19,12 @@ echo 'export HOME=/root' >> ~/.bashrc
 ```sh
 nix fmt .                        # 格式化所有 Nix 文件（使用 alejandra）
 nix run home-manager -- switch --flake .#cambricon-pod      # 应用配置（root，最小集）
-nix run home-manager -- switch --flake .#cambricon-dev      # 应用配置（root，开发工具链）
 nix run home-manager -- switch --flake .#cambricon-desktop  # 应用配置（cambricon，桌面）
 
 # —— NeoDot 本地开发（不 push 也能改 nvim 配置）——
 git clone https://github.com/418-teapot/NeoDot ~/Code/NeoDot   # 一次性
 # 开发期：把 flake.nix 里 neodot.url 改成 path:/home/cambricon/Code/NeoDot
-nix run home-manager -- switch --flake .#cambricon-dev          # 未提交改动也会被读取
+nix run home-manager -- switch --flake .#cambricon-pod         # 未提交改动也会被读取
 # 稳定后：push NeoDot → 把 url 改回 "github:418-teapot/NeoDot" → 更新锁定：
 nix flake update neodot
 ```
@@ -34,16 +33,16 @@ nix flake update neodot
 
 ```
 flake.nix                   — 入口文件，定义 inputs 和三个 homeConfiguration
+home/common.nix             — pod 与 desktop 共有的模块（agent/basic/debugger/neovim/nushell）
 home/cambricon-pod.nix      — root（/root），最小集
-home/cambricon-dev.nix      — root（/root），开发工具链（rust/llvm/js）
 home/cambricon-desktop.nix  — cambricon（/home/cambricon/），桌面（fonts/fcitx5/ghostty）
 home/packages/              — 各工具模块，按需由上述配置导入
 ```
 
 - 系统硬编码为 `x86_64-linux`。
 - 导入 nixpkgs 时设置了 `allowUnfree = true`。
-- 三套配置共用基础包（basic/git/neovim/nushell/yazi）；dev 额外导入 rust/llvm/js，desktop 额外导入 fonts/fcitx5/ghostty。
-- 用户与家目录随配置而异：pod/dev 为 root(/root)，desktop 为 cambricon(/home/cambricon/)。
+- pod 与 desktop 通过 `home/common.nix` 共享模块（agent/basic/debugger/neovim/nushell）；desktop 额外导入 fonts/fcitx5/ghostty 等。
+- 用户与家目录随配置而异：pod 为 root(/root)，desktop 为 cambricon(/home/cambricon/)。
 
 ## 模块约定
 

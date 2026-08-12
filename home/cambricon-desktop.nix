@@ -24,14 +24,10 @@
   ];
 
   imports = [
-    ./packages/agent.nix
-    ./packages/basic.nix
-    ./packages/debugger.nix
+    ./common.nix
     ./packages/fcitx5.nix
     ./packages/fonts.nix
     ./packages/ghostty.nix
-    ./packages/neovim.nix
-    ./packages/nushell/nushell.nix
     ./packages/obsidian.nix
     ./packages/paseo/desktop.nix
     ./packages/sidra.nix

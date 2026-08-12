@@ -86,16 +86,6 @@
         };
       };
 
-      cambricon-dev = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
-        modules = [
-          ./home/cambricon-dev.nix
-        ];
-        extraSpecialArgs = {
-          inherit inputs;
-        };
-      };
-
       cambricon-desktop = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         modules = [
