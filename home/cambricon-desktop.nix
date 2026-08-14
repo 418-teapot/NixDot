@@ -29,6 +29,7 @@
     ./packages/fonts.nix
     ./packages/ghostty.nix
     ./packages/obsidian.nix
+    ./packages/openchamber.nix
     ./packages/paseo/desktop.nix
     ./packages/sidra.nix
     ./packages/ssh.nix

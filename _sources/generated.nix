@@ -8,26 +8,34 @@
 {
   obsidian = {
     pname = "obsidian";
-    version = "1.13.4";
+    version = "1.13.7";
     src = fetchurl {
-      url = "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.13.4/Obsidian-1.13.4.AppImage";
-      sha256 = "sha256-tm8B0qavu2t6vZPktcZgJkXwPBatLW3Un9WpDd3YeHI=";
+      url = "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.13.7/Obsidian-1.13.7.AppImage";
+      sha256 = "sha256-4NjgphFiTejJx9zYqeZIJ5+woNVS+qExK35POl+nJmM=";
+    };
+  };
+  openchamber = {
+    pname = "openchamber";
+    version = "1.18.3";
+    src = fetchurl {
+      url = "https://github.com/openchamber/openchamber/releases/download/v1.18.3/OpenChamber-1.18.3-linux-x86_64.AppImage";
+      sha256 = "sha256-jrO339qo1TFG4M0js2ubZgO0T9jCqBz/uxwluO6JVTc=";
     };
   };
   paseo = {
     pname = "paseo";
-    version = "0.2.5";
+    version = "0.4.0";
     src = fetchurl {
-      url = "https://github.com/getpaseo/paseo/releases/download/v0.2.5/Paseo-x86_64.AppImage";
-      sha256 = "sha256-zWrEHZc7BuQYL0Jx7HaajftRBm2BbNHnLHQpPWsOE6s=";
+      url = "https://github.com/getpaseo/paseo/releases/download/v0.4.0/Paseo-x86_64.AppImage";
+      sha256 = "sha256-c7/7RkT265V8EFDoQ2pELmyuG0TlVvx/aYO+xJuhEHU=";
     };
   };
   sidra = {
     pname = "sidra";
-    version = "0.4.0";
+    version = "0.4.1";
     src = fetchurl {
-      url = "https://github.com/wimpysworld/sidra/releases/download/0.4.0/Sidra-linux-x86_64.AppImage";
-      sha256 = "sha256-itG0Dm/ID79SXs28QHoHkZO3J2sCzXBNyBX1gwb9Z2Y=";
+      url = "https://github.com/wimpysworld/sidra/releases/download/0.4.1/Sidra-linux-x86_64.AppImage";
+      sha256 = "sha256-AnWPy7nWkTJu0ainFjU5jgoqmZki1ioyNwKSj3ymAsQ=";
     };
   };
 }
