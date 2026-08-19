@@ -30,6 +30,7 @@
     ./packages/ghostty.nix
     ./packages/obsidian.nix
     ./packages/openchamber.nix
+    ./packages/agent/opencode.nix
     ./packages/paseo/desktop.nix
     ./packages/sidra.nix
     ./packages/ssh.nix

@@ -16,5 +16,6 @@
 
   imports = [
     ./common.nix
+    ./packages/agent/opencode-compat.nix
   ];
 }
