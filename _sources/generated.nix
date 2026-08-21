@@ -16,10 +16,10 @@
   };
   openchamber = {
     pname = "openchamber";
-    version = "1.18.3";
+    version = "1.19.0";
     src = fetchurl {
-      url = "https://github.com/openchamber/openchamber/releases/download/v1.18.3/OpenChamber-1.18.3-linux-x86_64.AppImage";
-      sha256 = "sha256-jrO339qo1TFG4M0js2ubZgO0T9jCqBz/uxwluO6JVTc=";
+      url = "https://github.com/openchamber/openchamber/releases/download/v1.19.0/OpenChamber-1.19.0-linux-x86_64.AppImage";
+      sha256 = "sha256-HrSI4Pd+0qxUXVc1o6CLC9LJlUbj4Nh4O4HVqgkOv4g=";
     };
   };
   paseo = {
