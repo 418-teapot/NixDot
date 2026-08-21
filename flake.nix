@@ -15,11 +15,6 @@
       url = "github:418-teapot/NeoDot";
       flake = false;
     };
-
-    paseo = {
-      url = "github:getpaseo/paseo";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs = inputs @ {

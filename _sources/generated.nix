@@ -22,14 +22,6 @@
       sha256 = "sha256-HrSI4Pd+0qxUXVc1o6CLC9LJlUbj4Nh4O4HVqgkOv4g=";
     };
   };
-  paseo = {
-    pname = "paseo";
-    version = "0.4.0";
-    src = fetchurl {
-      url = "https://github.com/getpaseo/paseo/releases/download/v0.4.0/Paseo-x86_64.AppImage";
-      sha256 = "sha256-c7/7RkT265V8EFDoQ2pELmyuG0TlVvx/aYO+xJuhEHU=";
-    };
-  };
   sidra = {
     pname = "sidra";
     version = "0.4.1";
