@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  pkgsUnstable,
   ...
 }: {
   home = {
@@ -17,7 +18,7 @@
   };
 
   home.packages = with pkgs; [
-    flameshot
+    pkgsUnstable.flameshot
     nvfetcher
     remmina
     zotero
