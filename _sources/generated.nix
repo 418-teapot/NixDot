@@ -16,18 +16,18 @@
   };
   openchamber = {
     pname = "openchamber";
-    version = "1.19.0";
+    version = "1.22.2";
     src = fetchurl {
-      url = "https://github.com/openchamber/openchamber/releases/download/v1.19.0/OpenChamber-1.19.0-linux-x86_64.AppImage";
-      sha256 = "sha256-HrSI4Pd+0qxUXVc1o6CLC9LJlUbj4Nh4O4HVqgkOv4g=";
+      url = "https://github.com/openchamber/openchamber/releases/download/v1.22.2/OpenChamber-1.22.2-linux-x86_64.AppImage";
+      sha256 = "sha256-CYcctHZTtt5kAcg9d2OE69WJ6LaZX/zWeRdcTnmUn4Q=";
     };
   };
   sidra = {
     pname = "sidra";
-    version = "0.4.1";
+    version = "1.1.1";
     src = fetchurl {
-      url = "https://github.com/wimpysworld/sidra/releases/download/0.4.1/Sidra-linux-x86_64.AppImage";
-      sha256 = "sha256-AnWPy7nWkTJu0ainFjU5jgoqmZki1ioyNwKSj3ymAsQ=";
+      url = "https://github.com/wimpysworld/sidra/releases/download/1.1.1/Sidra-linux-x86_64.AppImage";
+      sha256 = "sha256-rV07ZcQkOd8mmb0hDkcZ0JDjX3iNAs71jaMUeDKNoUI=";
     };
   };
 }
