@@ -20,19 +20,19 @@ in {
       vim_mode = true;
       agent_buffer_font_size =
         if isDarwin
-        then 18
+        then 16
         else 20;
       agent_ui_font_size =
         if isDarwin
-        then 18
+        then 16
         else 20;
       ui_font_size =
         if isDarwin
-        then 16
+        then 14
         else 18;
       buffer_font_size =
         if isDarwin
-        then 18
+        then 16
         else 20;
       buffer_font_family = "Maple Mono NF CN";
       theme = {
