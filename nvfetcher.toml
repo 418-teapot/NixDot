@@ -3,11 +3,6 @@ src.webpage = "https://api.github.com/repos/obsidianmd/obsidian-releases/release
 src.regex = "releases/download/v([0-9][0-9.]*)/Obsidian-[0-9][0-9.]*\\.AppImage\""
 fetch.url = "https://github.com/obsidianmd/obsidian-releases/releases/download/v$ver/Obsidian-$ver.AppImage"
 
-[openchamber]
-src.webpage = "https://api.github.com/repos/openchamber/openchamber/releases?per_page=100"
-src.regex = "releases/download/v([0-9][0-9.]*)/OpenChamber-[0-9][0-9.]*-linux-x86_64\\.AppImage\""
-fetch.url = "https://github.com/openchamber/openchamber/releases/download/v$ver/OpenChamber-$ver-linux-x86_64.AppImage"
-
 [sidra]
 src.webpage = "https://api.github.com/repos/wimpysworld/sidra/releases?per_page=100"
 src.regex = "releases/download/([0-9][0-9.]*)/Sidra-linux-x86_64\\.AppImage\""

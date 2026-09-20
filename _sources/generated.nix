@@ -14,14 +14,6 @@
       sha256 = "sha256-4NjgphFiTejJx9zYqeZIJ5+woNVS+qExK35POl+nJmM=";
     };
   };
-  openchamber = {
-    pname = "openchamber";
-    version = "1.22.2";
-    src = fetchurl {
-      url = "https://github.com/openchamber/openchamber/releases/download/v1.22.2/OpenChamber-1.22.2-linux-x86_64.AppImage";
-      sha256 = "sha256-CYcctHZTtt5kAcg9d2OE69WJ6LaZX/zWeRdcTnmUn4Q=";
-    };
-  };
   sidra = {
     pname = "sidra";
     version = "1.1.1";
