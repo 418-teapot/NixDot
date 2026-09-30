@@ -16,10 +16,10 @@
   };
   sidra = {
     pname = "sidra";
-    version = "1.1.1";
+    version = "1.1.2";
     src = fetchurl {
-      url = "https://github.com/wimpysworld/sidra/releases/download/1.1.1/Sidra-linux-x86_64.AppImage";
-      sha256 = "sha256-rV07ZcQkOd8mmb0hDkcZ0JDjX3iNAs71jaMUeDKNoUI=";
+      url = "https://github.com/wimpysworld/sidra/releases/download/1.1.2/Sidra-linux-x86_64.AppImage";
+      sha256 = "sha256-ON9b0VkPWRRW7+0TIw2Ygs464WYHeFigD+gfz/sEql4=";
     };
   };
 }
