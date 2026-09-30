@@ -21,6 +21,7 @@
     pkgsUnstable.flameshot
     nvfetcher
     remmina
+    wl-clipboard
     zotero
   ];
 
