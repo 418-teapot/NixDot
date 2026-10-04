@@ -18,6 +18,7 @@
     ./packages/agent
     ./packages/basic.nix
     ./packages/fonts.nix
+    ./packages/fpga.nix
     ./packages/ghostty.nix
     ./packages/neovim.nix
     ./packages/nushell/nushell.nix
