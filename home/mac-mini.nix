@@ -14,6 +14,12 @@
     email = "wangshuo2912@foxmail.com";
   };
 
+  home.packages = with pkgs; [
+    imhex
+    love
+    qbittorrent
+  ];
+
   imports = [
     ./packages/agent
     ./packages/agent/opencode.nix
