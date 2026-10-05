@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  pkgsUnstable,
   ...
 }: let
   # bun reads its global config from $XDG_CONFIG_HOME/.bunfig.toml if that env
@@ -11,31 +12,34 @@
     install.registry = "https://registry.npmmirror.com";
   };
 in {
-  home.packages = with pkgs; [
-    # LLVM / C/C++
-    gcc
-    libllvm
-    llvm
-    lld
-    mold
-    # Rust
-    cargo
-    cargo-llvm-cov
-    clippy
-    rustc
-    rustfmt
-    # JavaScript / TypeScript
-    biome
-    typescript
-    # Nix
-    nixd
-    # Scheme
-    chez
-    # Odin
-    odin
-    # C3
-    c3c
-  ];
+  home.packages = with pkgs;
+    [
+      # LLVM / C/C++
+      gcc
+      libllvm
+      llvm
+      lld
+      mold
+      # Rust
+      cargo
+      cargo-llvm-cov
+      clippy
+      rustc
+      rustfmt
+      # JavaScript / TypeScript
+      biome
+      typescript
+      # Nix
+      nixd
+      # Scheme
+      chez
+    ]
+    ++ (with pkgsUnstable; [
+      # Odin
+      odin
+      # C3
+      c3c
+    ]);
 
   programs.cargo = {
     enable = true;

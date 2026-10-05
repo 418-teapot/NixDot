@@ -16,14 +16,15 @@
 
   imports = [
     ./packages/agent
+    ./packages/agent/opencode.nix
     ./packages/basic.nix
     ./packages/fonts.nix
     ./packages/fpga.nix
     ./packages/ghostty.nix
     ./packages/neovim.nix
     ./packages/nushell/nushell.nix
-    ./packages/agent/opencode.nix
     ./packages/ssh.nix
+    ./packages/toolchain.nix
     ./packages/zed.nix
   ];
 }
