@@ -4,6 +4,7 @@
   pkgsUnstable,
   ...
 }: let
+  isDarwin = pkgs.stdenv.hostPlatform.isDarwin;
   # bun reads its global config from $XDG_CONFIG_HOME/.bunfig.toml if that env
   # var is exported, otherwise from $HOME/.bunfig.toml. home-manager's
   # programs.bun module only writes the XDG path, so bun ignores it in contexts
@@ -15,7 +16,6 @@ in {
   home.packages = with pkgs;
     [
       # LLVM / C/C++
-      gcc
       libllvm
       llvm
       lld
@@ -33,6 +33,9 @@ in {
       nixd
       # Scheme
       chez
+    ]
+    ++ pkgs.lib.optionals (!isDarwin) [
+      gcc
     ]
     ++ (with pkgsUnstable; [
       # Odin
