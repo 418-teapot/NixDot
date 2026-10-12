@@ -26,7 +26,7 @@
   };
 
   desktopItem = pkgs.makeDesktopItem {
-    name = "obsidian";
+    name = "md.obsidian.Obsidian";
     desktopName = "Obsidian";
     comment = "Knowledge base that works on top of a local folder of plain text Markdown files";
     icon = "obsidian";
