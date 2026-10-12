@@ -8,10 +8,10 @@
 {
   obsidian = {
     pname = "obsidian";
-    version = "1.13.7";
+    version = "1.14.4";
     src = fetchurl {
-      url = "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.13.7/Obsidian-1.13.7.AppImage";
-      sha256 = "sha256-4NjgphFiTejJx9zYqeZIJ5+woNVS+qExK35POl+nJmM=";
+      url = "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.14.4/Obsidian-1.14.4.AppImage";
+      sha256 = "sha256-Y2Ldvu7rt7vMtI+uAJVyzyKE75L1yRnBMyq6SN5v/qo=";
     };
   };
   sidra = {

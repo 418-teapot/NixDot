@@ -8,11 +8,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-4NjgphFiTejJx9zYqeZIJ5+woNVS+qExK35POl+nJmM=",
+            "sha256": "sha256-Y2Ldvu7rt7vMtI+uAJVyzyKE75L1yRnBMyq6SN5v/qo=",
             "type": "url",
-            "url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.13.7/Obsidian-1.13.7.AppImage"
+            "url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.14.4/Obsidian-1.14.4.AppImage"
         },
-        "version": "1.13.7"
+        "version": "1.14.4"
     },
     "sidra": {
         "cargoLock": null,
