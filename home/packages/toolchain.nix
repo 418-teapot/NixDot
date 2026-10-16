@@ -33,6 +33,8 @@ in {
       nixd
       # Scheme
       chez
+      # Lua
+      stylua
     ]
     ++ pkgs.lib.optionals (!isDarwin) [
       gcc
