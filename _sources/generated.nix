@@ -8,18 +8,18 @@
 {
   obsidian = {
     pname = "obsidian";
-    version = "1.14.4";
+    version = "1.14.5";
     src = fetchurl {
-      url = "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.14.4/Obsidian-1.14.4.AppImage";
-      sha256 = "sha256-Y2Ldvu7rt7vMtI+uAJVyzyKE75L1yRnBMyq6SN5v/qo=";
+      url = "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.14.5/Obsidian-1.14.5.AppImage";
+      sha256 = "sha256-MGgV9g0V3qhhDXKIbvXlDvS35xhelS/8O7Ib7hWC2VI=";
     };
   };
   sidra = {
     pname = "sidra";
-    version = "1.1.2";
+    version = "1.2.1";
     src = fetchurl {
-      url = "https://github.com/wimpysworld/sidra/releases/download/1.1.2/Sidra-linux-x86_64.AppImage";
-      sha256 = "sha256-ON9b0VkPWRRW7+0TIw2Ygs464WYHeFigD+gfz/sEql4=";
+      url = "https://github.com/wimpysworld/sidra/releases/download/1.2.1/Sidra-linux-x86_64.AppImage";
+      sha256 = "sha256-jip87nDTVxudIThGVsZ3bnuZU32YPMfjEug0y48mKA0=";
     };
   };
 }
