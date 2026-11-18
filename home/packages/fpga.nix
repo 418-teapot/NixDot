@@ -3,11 +3,21 @@
   pkgs,
   pkgsUnstable,
   ...
-}: {
+}: let
+  javaPackage = pkgs.graalvmPackages.graalvm-ce;
+in {
+  programs.java = {
+    enable = true;
+    package = javaPackage;
+  };
   home.packages = with pkgs;
     [
-      graalvmPackages.graalvm-ce
-      mill
+      (scalafmt.override {
+        jre = javaPackage;
+      })
+      (mill.override {
+        jre = javaPackage;
+      })
     ]
     ++ (with pkgsUnstable; [
       # 综合
