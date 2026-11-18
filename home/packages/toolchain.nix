@@ -12,6 +12,7 @@
   bunfig = {
     install.registry = "https://registry.npmmirror.com";
   };
+  javaPackage = pkgs.graalvmPackages.graalvm-ce;
 in {
   home.packages = with pkgs;
     [
@@ -35,6 +36,13 @@ in {
       chez
       # Lua
       stylua
+      # Scala
+      (scalafmt.override {
+        jre = javaPackage;
+      })
+      (mill.override {
+        jre = javaPackage;
+      })
     ]
     ++ pkgs.lib.optionals (!isDarwin) [
       gcc
@@ -58,6 +66,11 @@ in {
     enable = true;
     package = pkgs.bun;
     settings = bunfig;
+  };
+
+  programs.java = {
+    enable = true;
+    package = javaPackage;
   };
 
   home.file.".bunfig.toml".source = (pkgs.formats.toml {}).generate "bun-config" bunfig;
