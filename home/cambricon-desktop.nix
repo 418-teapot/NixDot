@@ -29,6 +29,7 @@
   imports = [
     ./common.nix
     ./packages/fcitx5.nix
+    ./packages/fpga.nix
     ./packages/fonts.nix
     ./packages/ghostty.nix
     ./packages/obsidian.nix
