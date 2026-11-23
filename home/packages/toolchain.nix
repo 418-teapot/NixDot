@@ -48,10 +48,12 @@ in {
       gcc
     ]
     ++ (with pkgsUnstable; [
-      # Odin
-      odin
       # C3
       c3c
+      # Lean
+      lean
+      # Odin
+      odin
     ]);
 
   programs.cargo = {
