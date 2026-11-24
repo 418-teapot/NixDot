@@ -34,6 +34,8 @@ in {
       nixd
       # Scheme
       chez
+      # Lean
+      lean4
       # Lua
       stylua
       # Scala
@@ -50,8 +52,6 @@ in {
     ++ (with pkgsUnstable; [
       # C3
       c3c
-      # Lean
-      lean
       # Odin
       odin
     ]);
