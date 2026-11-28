@@ -1,5 +1,6 @@
 {pkgsUnstable, ...}: {
   home.packages = with pkgsUnstable; [
+    antigravity-cli
     codex
     herdr
     pi-coding-agent
