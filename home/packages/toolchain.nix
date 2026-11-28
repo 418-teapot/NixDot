@@ -27,6 +27,7 @@ in {
       clippy
       rustc
       rustfmt
+      rust-analyzer
       # JavaScript / TypeScript
       biome
       typescript
@@ -43,6 +44,9 @@ in {
         jre = javaPackage;
       })
       (mill.override {
+        jre = javaPackage;
+      })
+      (metals.override {
         jre = javaPackage;
       })
     ]
